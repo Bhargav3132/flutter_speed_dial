@@ -56,29 +56,28 @@ class SpeedDial extends StatefulWidget {
   /// The speed of the animation
   final int animationSpeed;
 
-  SpeedDial({
-    this.children = const [],
-    this.visible = true,
-    this.backgroundColor,
-    this.foregroundColor,
-    this.elevation = 6.0,
-    this.overlayOpacity = 0.8,
-    this.overlayColor = Colors.white,
-    this.tooltip,
-    this.heroTag,
-    this.animatedIcon,
-    this.animatedIconTheme,
-    this.child,
-    this.marginBottom = 16,
-    this.marginRight = 16,
-    this.onOpen,
-    this.onClose,
-    this.closeManually = false,
-    this.shape = const CircleBorder(),
-    this.curve = Curves.linear,
-    this.onPress,
-    this.animationSpeed = 150
-  });
+  SpeedDial(
+      {this.children = const [],
+      this.visible = true,
+      this.backgroundColor,
+      this.foregroundColor,
+      this.elevation = 6.0,
+      this.overlayOpacity = 0.8,
+      this.overlayColor = Colors.white,
+      this.tooltip,
+      this.heroTag,
+      this.animatedIcon,
+      this.animatedIconTheme,
+      this.child,
+      this.marginBottom = 16,
+      this.marginRight = 16,
+      this.onOpen,
+      this.onClose,
+      this.closeManually = false,
+      this.shape = const CircleBorder(),
+      this.curve = Curves.linear,
+      this.onPress,
+      this.animationSpeed = 150});
 
   @override
   _SpeedDialState createState() => _SpeedDialState();
@@ -246,7 +245,6 @@ class _SpeedDialState extends State<SpeedDial> with SingleTickerProviderStateMix
     return Stack(
       alignment: Alignment.bottomRight,
       fit: StackFit.expand,
-      overflow: Overflow.visible,
       children: children,
     );
   }
