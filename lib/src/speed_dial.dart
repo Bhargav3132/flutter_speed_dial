@@ -244,6 +244,7 @@ class _SpeedDialState extends State<SpeedDial> with SingleTickerProviderStateMix
 
     return Stack(
       alignment: Alignment.bottomRight,
+      clipBehavior: Clip.none,
       fit: StackFit.expand,
       children: children,
     );
